@@ -3,7 +3,14 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
-
+// 拦截未登陆
+const isTokenBeforEnter = (to,from,next)=>{
+  if(window.localStorage.getItem('access_token')){
+    next()
+  }else {
+    // 未登陆处理
+  }
+}
 const routes = [
   {
     path: '/',

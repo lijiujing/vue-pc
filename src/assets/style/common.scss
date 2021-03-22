@@ -1,0 +1,22 @@
+.clearfix:after{
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix{
+  *zoom:1;
+}
+.float-left{
+  float:left;
+}
+.float-right{
+  float:right;
+}
+// 单行文字省略
+.ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
